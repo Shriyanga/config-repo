@@ -21,6 +21,9 @@ management:
       exposure:
         include: "*"
 
+endpoint:
+    refresh:
+      enabled: true
 logging:
   level:
     root: INFO
