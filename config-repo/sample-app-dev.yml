@@ -4,3 +4,6 @@ spring:
 
 example:
   message: Hello from config server!
+my:
+  custom:
+    value: This is a test config
