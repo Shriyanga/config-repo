@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: sample-app
+
+example:
+  message: Hello from config server!
