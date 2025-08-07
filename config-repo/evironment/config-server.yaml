@@ -9,9 +9,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Shriyanga/config-repo.git
+          uri: ${CONFIG_GIT_URI:https://github.com/Shriyanga/config-repo.git}
           clone-on-start: true
-          default-label: main   # or the correct branch name
+          default-label: main
           timeout: 10
           force-pull: true
 
