@@ -2,8 +2,8 @@ spring:
   application:
     name: sample-app
 
-example:
-  message: Hello from config server!
+welcome:
+  message: Hello from Spring Cloud Config!
 my:
   custom:
     value: This is a test config
