@@ -13,10 +13,16 @@ management:
   tracing:
     sampling:
       probability: 1.0
-
   zipkin:
     tracing:
       endpoint: http://a5cd29c2a562e417999265ac7cf9a3a0-66414207.us-east-1.elb.amazonaws.com:9411/api/v2/spans
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
 
 welcome:
   message: Hello from Auth Service with External URLs!
