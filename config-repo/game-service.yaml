@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: game-service
+  config:
+    import: optional:configserver:http://a8c6eb49ed59b4f91b296275532c67af-1518297542.us-east-1.elb.amazonaws.com:8088/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://a64b39d3d82534d21b445f66b6dc4188-1872932290.us-east-1.elb.amazonaws.com:8761/eureka
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://a5cd29c2a562e417999265ac7cf9a3a0-66414207.us-east-1.elb.amazonaws.com:9411/api/v2/spans
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+welcome:
+  message: Hello from Auth Service with External URLs!
